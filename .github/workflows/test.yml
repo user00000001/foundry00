@@ -25,6 +25,9 @@ jobs:
       - name: Run Forge build
         run: |
           forge --version
+          forge install --no-commit @chainlink=smartcontractkit/chainlink@49f1bf3ba296f0e3dfc01d5a3d371f82f159dc4a
+          forge install --no-commit @aave/protocol-v2=aave/protocol-v2
+          env FOUNDRY_PROFILE=0_4_x forge build
           forge build --sizes
         id: build
 
@@ -35,7 +38,7 @@ jobs:
 
       - name: Run Forge coverage
         run: |
-          env COVERAGE=true FOUNDRY_FUZZ_RUNS=10 forge coverage --report lcov --ir-minimum; \
+          env COVERAGE=true FOUNDRY_FUZZ_RUNS=10 forge coverage --report lcov --ir-minimum
           sed -i '/,0/d' lcov.info
         id: coverage
 
