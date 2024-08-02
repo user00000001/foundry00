@@ -1,5 +1,13 @@
 ## Foundry
 
+[![codecov](https://codecov.io/gh/user00000001/foundry00/graph/badge.svg?token=DQOQN0ZRBD)](https://codecov.io/gh/user00000001/foundry00)
+
+[sunburst](https://codecov.io/gh/user00000001/foundry00/graphs/sunburst.svg?token=DQOQN0ZRBD)
+
+[tree](https://codecov.io/gh/user00000001/foundry00/graphs/tree.svg?token=DQOQN0ZRBD)
+
+[icicle](https://codecov.io/gh/user00000001/foundry00/graphs/icicle.svg?token=DQOQN0ZRBD)
+
 **Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
 
 Foundry consists of:
